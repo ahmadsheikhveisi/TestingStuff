@@ -1,0 +1,14 @@
+download cuda X.X based on gpu type: https://en.wikipedia.org/wiki/CUDA , https://developer.nvidia.com/cuda-toolkit-archive
+install build-essentials libxi6:i386, libxmu6:i386, libxmu-dev, libxi-dev, libgl1-mesa-dev, libgl-dev, 
+
+./cuda_XX.run --tar mxvf
+cp InstallUtils.pm /usr/lib/x86_64-linux-gnu/perl-base
+
+init 3
+
+export $PERL5LIB 
+sudo ./cuda_X.X.run --override
+
+init 5
+
+rm /usr/lib/x86_64-linux-gnu/perl-base/InstallUtils.pm
